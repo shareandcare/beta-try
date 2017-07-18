@@ -1623,7 +1623,8 @@
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		border-bottom: solid 1px #e4e4e4;
+		/* removed under line from all links
+		border-bottom: solid 1px #e4e4e4; */
 		color: inherit;
 		text-decoration: none;
 	}
@@ -2090,9 +2091,8 @@
 			}
 
 		.image.listing {
-			overflow: hidden;			
-			
-
+			overflow: hidden;
+			display: inline-block;					
 		
 		}
 
@@ -2277,11 +2277,13 @@
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
 		overflow-x: auto;
+
 	}
 	
 	table {
 		margin: 0 0 2.25em 0;
 		width: 100%;
+
 
 	}
 		
@@ -2289,11 +2291,12 @@
 			/* border: solid 2px #f4f4f4; */
 			border: 0;
 			
+			
 		}
 
 			table tbody tr:nth-child(2n + 1) {
-				/* background-color: #fafafa; */
-				background-color: #B9B9C5;
+				background-color: #fafafa;
+				/* background-color: #B9B9C5; */
 			}
 		
 		table td {
@@ -2348,6 +2351,9 @@
 			table.alt tfoot {
 				border-top: 0;
 			}
+	.table-hover tbody tr:hover td {
+    	background: #B9B9C5;
+	}
 
 /* Button */
 
