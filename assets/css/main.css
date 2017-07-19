@@ -2600,6 +2600,7 @@
 
 			#header a:hover {
 				color: #ffffff !important;
+
 			}
 
 		#header > header {
@@ -2647,6 +2648,7 @@
 				#header > footer .icons li a {
 					/* color: #b6e9dc; */
 					color: #76768F;
+					text-decoration: none;
 				}
 
 		#header > nav {
