@@ -2521,7 +2521,7 @@
 		text-align: right;
 
 	} */
-	
+
 	.features article {
 		border-top: solid 3px #f4f4f4;
 		margin-bottom: 2.25em;
@@ -3200,6 +3200,11 @@
 					ul.actions.small li:first-child {
 						padding-top: 0;
 					}
+
+			ul.feature-icons li {
+				display: block;
+				width: 100%;
+			}
 
 			ul.feature-icons li {
 				display: block;
