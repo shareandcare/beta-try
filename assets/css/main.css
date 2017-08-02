@@ -2705,6 +2705,7 @@
 
 /* One */
 
+	
 	#one:before {
 		/* background-image: url("../../images/mediacenter.jpg"); */
 		background-image: url("../../images/mediacenter.jpg");
@@ -2715,8 +2716,47 @@
 		content: '';
 		display: block;
 		height: 15em;
-		width: 100%;
+		width: 100%;		
 	}
+
+
+/* Accordion */
+	
+	button.accordion {
+	    background-color: white;
+	    color: #76768F;
+	    cursor: pointer;
+	    padding: 18px;
+	    width: 100%;
+	    text-align: left;
+	    border: none;
+	    outline: none;
+	    transition: 0.4s;
+	    font-weight: 600;
+	}
+
+	button.accordion:after {
+	    content: '\02795'; /* Unicode character for "plus" sign (+) */
+	    font-size: 13px;
+	    color: #777;
+	    float: right;
+	    margin-left: 5px;
+	}
+
+	button.accordion.active:after {
+	    content: "\2796"; /* Unicode character for "minus" sign (-) */
+	}
+
+	div.panel {
+	    padding: 0 18px;
+	    background-color: white;
+	    max-height: 0;
+	    overflow: hidden;
+	    transition: max-height 0.2s ease-out;
+	    color: #1E1E46;
+	}
+
+
 
 /* Footer */
 
