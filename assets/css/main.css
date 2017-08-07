@@ -1583,16 +1583,18 @@
 		border-bottom: solid 1px #e4e4e4; */
 		color: inherit;
 		text-decoration: none;
+		vertical-align: top;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
 			/* color: #4acaa8 !important; */
-			color: #525271 !important;
+			color: #76768F !important;
 		}
 
 	strong, b {
-		color: #777;
+		/* color: #777; */
+		color: inherit;
 		font-weight: 700;
 	}
 
@@ -1605,8 +1607,7 @@
 	}
 
 	p.home {
-		font-size: 90%;
-		margin: 0 0 1.125em 0;
+		font-size: 125%;	
 		
 	}
 
@@ -2010,6 +2011,7 @@
 
 	.desc-item-icon {
 		font-size: 7em;
+		z-index: 1;
 	}
 
 /* Image */
@@ -2074,6 +2076,7 @@
 
 		.image.home img {
 			margin: 0 0 3em 0;
+			width: 125%;
 
 		}
 
@@ -2290,16 +2293,16 @@
 		
 		table td {
 			padding: 0.75em 0.75em;			
-			font-size: 0.9em;
+			/* font-size: 0.9em; */
+			font-size: 1em;
 			vertical-align: middle;
 			text-align: center;
 
 		}
 
-
 		table th {
 			/* color: #777; */
-			color: #525271;
+			color: #76768F;
 			font-size: 0.9em;
 			font-weight: 700;
 			padding: 0 0.75em 0.75em 0.75em;			
@@ -2706,6 +2709,7 @@
 /* One */
 
 	#one:before {
+
 		/* background-image: url("../../images/mediacenter.jpg"); */
 		background-image: url("../../images/mediacenter.jpg");
 		/* background-position: center; */
@@ -2714,9 +2718,56 @@
 		background-size: cover;
 		content: '';
 		display: block;
-		height: 15em;
+		height: 45em;
 		width: 100%;
+		opacity: .15;
+		margin-top: -5em;
 	}
+
+	.desc-wrapper {
+		margin-top: -35em;
+		margin-bottom: 10em;
+
+	}
+
+
+/* Accordion */
+	
+	button.accordion {
+	    background-color: white;
+	    color: #76768F;
+	    cursor: pointer;
+	    padding: 18px;
+	    width: 100%;
+	    text-align: left;
+	    border: none;
+	    outline: none;
+	    transition: 0.4s;
+	    font-weight: 600;
+	}
+
+	button.accordion:after {
+	    content: '\02795'; /* Unicode character for "plus" sign (+) */
+	    font-size: 13px;
+	    color: #777;
+	    float: right;
+	    margin-left: 5px;
+	}
+
+	button.accordion.active:after {
+	    content: "\2796"; /* Unicode character for "minus" sign (-) */
+	}
+
+	div.panel {
+	    padding: 0 18px;
+	    background-color: white;
+	    max-height: 0;
+	    overflow: hidden;
+	    transition: max-height 0.2s ease-out;
+	    color: #1E1E46;
+	}
+
+
 
 /* Footer */
 
