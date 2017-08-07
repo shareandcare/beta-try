@@ -1607,8 +1607,7 @@
 	}
 
 	p.home {
-		font-size: 90%;
-		margin: 0 0 1.125em 0;
+		font-size: 125%;	
 		
 	}
 
@@ -2012,6 +2011,7 @@
 
 	.desc-item-icon {
 		font-size: 7em;
+		z-index: 1;
 	}
 
 /* Image */
@@ -2076,6 +2076,7 @@
 
 		.image.home img {
 			margin: 0 0 3em 0;
+			width: 125%;
 
 		}
 
@@ -2292,12 +2293,12 @@
 		
 		table td {
 			padding: 0.75em 0.75em;			
-			font-size: 0.9em;
+			/* font-size: 0.9em; */
+			font-size: 1em;
 			vertical-align: middle;
 			text-align: center;
 
 		}
-
 
 		table th {
 			/* color: #777; */
@@ -2707,8 +2708,8 @@
 
 /* One */
 
-	
 	#one:before {
+
 		/* background-image: url("../../images/mediacenter.jpg"); */
 		background-image: url("../../images/mediacenter.jpg");
 		/* background-position: center; */
@@ -2717,8 +2718,16 @@
 		background-size: cover;
 		content: '';
 		display: block;
-		height: 15em;
-		width: 100%;		
+		height: 45em;
+		width: 100%;
+		opacity: .15;
+		margin-top: -5em;
+	}
+
+	.desc-wrapper {
+		margin-top: -35em;
+		margin-bottom: 10em;
+
 	}
 
 
